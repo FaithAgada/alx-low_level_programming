@@ -1,17 +1,21 @@
 #include "main.h"
 
 /**
- * _islower - Checks for lowercase character
- * @c:	The character to be checked
- * Return: 1 for lowercase character or 0 for anything else
+ * _abs - Computes the absolute value of an integer.
+ * @c: The number to be computed.
+ * Return: Absolute value of number or zero
  */
 
-int _islower(int c)
+int _abs(int c)
 
 {
-	if (c >= 97 && c <= 122)
+
+	if (c < 0)
 	{
-	return (1);
+	int abs_val;
+
+	abs_val = c * -1;
+	return (abs_val);
 	}
-	return (0);
+	return (c);
 }
